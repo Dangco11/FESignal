@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 64px;
+  --content-height: calc(100vh - var(--header-height));
+  --primary-button: linear-gradient(90.67deg, #01ab6f 0.13%, #00b49e 95.62%);
+  --primary-button-hover: linear-gradient(90.67deg, #00d289 0.13%, #00cdb4 95.62%);
+  /* Handle on hover */
+}
+.card ::-webkit-scrollbar {
+  width: 5px;
+}
+
+.card ::-webkit-scrollbar-track {
+  background: transparent;
+  height: 1px;
+}
+
+/* Handle */
+.card ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 100px;
+}
